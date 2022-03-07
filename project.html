@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+        <!-- Left -->
+        <div class="left-side">
+          <a href="index.html"><img src="/asset/logo.png"></a>
+
+            <ul>
+                <li><a href="index.html" style="font-weight: 900;">Home</a></li>
+                <li><a href="project.html">My Project</a></li>
+            </ul>
+        </div>
+
+        <!-- Right -->
+        <div class="right-side">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1>ADD MY PROJECT</h1>
+            <div class="name">
+              <label for="input-blog-title">Project Name</label>
+              <input id="input-blog-title" />
+            </div>
+            <div class="DateTime">
+              <div class="left-side">
+                <label for="start">Start Date</label>
+                <input id="start" type="date">
+              </div>
+              <div class="right-side">
+                <label for="end">End Date</label>
+                <input id="end" type="date">
+              </div>
+            </div>
+            <div>
+              <label for="input-blog-content">Description</label>
+              <textarea id="input-blog-content"></textarea>
+            </div>
+
+    <!--Checkbox-->
+            <label>Technologies</label>
+            <div class="check">
+              <div class="flexleft">
+                <input type="checkbox" id="app1" name="app1" style="margin-bottom: 20px; box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+                <label for="app1"> Node Js</label>
+                <br>
+                <input type="checkbox" id="app2" name="app2" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+                <label for="app2"> React Js</label>
+              </div>
+              <div class="flexright">
+                <input type="checkbox" id="app3" name="app3" style="margin-bottom: 20px; box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+                <label for="app3"> Next Js</label>
+                <br>
+                <input type="checkbox" id="app4" name="app4" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+                <label for="app4"> TypeScript</label>                
+              </div>
+            </div>
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <h6>choose</h6>
+                  <img src="asset/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button type="button" onclick="addBlog()">submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="contents" class="blog-list">
+        <!-- dynamic content would be here -->
+        <h1 style="margin-top: 40px;">MY PROJECT</h1>
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="asset/blog-img.png" alt="" />
+          </div>
+          <div class="blog-content">
+            <h3>
+              <a href="project.detailed.html" target="_blank">
+                Dumbways Mobile App - 2021
+              </a>
+            </h3>
+            <div class="detail-blog-content">
+              durasi : 3 bulan
+            </div>
+            <p>
+              App that used for dumbways student, it was deployed and can download on playstore.<br>Happy download.
+            </p>
+            <img style="margin-right: 10px;" src="https://img.icons8.com/ios-glyphs/30/000000/google-play.png"/>
+            <img style="margin-right: 10px;" src="https://img.icons8.com/material-sharp/30/000000/android-os.png"/>
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/java-coffee-cup-logo.png"/>
+            <div class="btn-group">
+              <a href="#" class="btn-edit">edit</a>
+              <a href="#" class="btn-post">delete</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="blog.js"></script>
+  </body>
+</html>
