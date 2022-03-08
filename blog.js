@@ -92,7 +92,7 @@ function renderBlog() {
       <div style="margin-top: 15px;">
         <img style="margin-right: 10px;" src="${blogs[i].skillNodeJs}"/>
         <img style="margin-right: 10px;" src="${blogs[i].skillReactJs}"/>
-        <img style="margin-right: 10px; width: 30px;" src="${blogs[i].skillNextJs}"/>
+        <img style="margin-right: 10px;" src="${blogs[i].skillNextJs}"/>
         <img src="${blogs[i].skillTypeScript}"/>
       </div>
       <div class="btn-group">
