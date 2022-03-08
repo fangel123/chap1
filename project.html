@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <!-- Left -->
+      <div class="left-side">
+        <a href="index.html"><img src="/assets/logo.png"></a>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="project.html">My Project</a></li>
+          </ul>
+      </div>
+
+      <!-- Right -->
+      <div class="right-side">
+          <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1>ADD MY PROJECT</h1>
+            <div>
+              <label for="input-blog-project">Project Name</label>
+              <input id="input-blog-project" />
+            </div>
+
+            <div class="date-project">
+              <div class="start">
+                <label class="start-one" for="input-start-date">Start Date</label>
+                <label class="end-one" for="input-end-date">End Date</label>
+              </div>
+              <!--input-blog-start
+              input-blog-end-->
+              <div class="end">
+                <input class="start-two" type="date" id="input-start-date" />
+                <input class="end-two" type="date" id="input-end-date" />
+              </div>
+            </div>
+
+            <div>
+              <label for="input-blog-description">Description</label>
+              <textarea id="input-blog-description"></textarea>
+            </div>
+
+            <div class="main-skills">
+              <label for="input-blog-technologies">Technologies</label>
+              <div class="techno">
+                <div class="skill-one">
+                  <p><input id="nodejs" value="https://img.icons8.com/windows/30/000000/node-js.png" type="checkbox" />Node Js</p>
+                  <p><input id="reactjs" value="https://img.icons8.com/ios-glyphs/30/000000/react.png" type="checkbox" />React Js</p>
+                </div>
+
+                <div class="skill-two">
+                  <p><input id="nextjs" value="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png" type="checkbox" />Next Js</p>
+                  <p><input id="typescript" value="https://img.icons8.com/material-rounded/30/000000/typescript.png" type="checkbox" />TypeScript</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>choose</p>
+                  <img src="assets/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <h1 class="title-project">MY PROJECT</h1>      
+      <div id="contents-blogs" class="blog-list">
+        <!-- dynamic content would be here -->
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="assets/blog-img.png" alt="" />
+          </div>
+          <div class="blog-content">
+            <h3>
+              <a href="blog-project-detail.html" target="_blank">Dumbways Mobile App - 2021</a>
+            </h3>
+            <div class="detail-blog-content">durasi : 3 bulan</div>
+            <p>
+              App that used for dumbways student, it was deployed and can download on playstore.<br>Happy download.
+            </p>
+            <div style="margin-top: 15px;">
+              <img style="margin-right: 10px;" src="https://img.icons8.com/ios-glyphs/30/000000/google-play.png"/>
+              <img style="margin-right: 10px;" src="https://img.icons8.com/material-sharp/30/000000/android-os.png"/>
+              <img src="https://img.icons8.com/ios-glyphs/30/000000/java-coffee-cup-logo.png"/>
+            </div>
+            
+            <div class="btn-group">
+              <a href="#" class="btn-edit">edit</a>
+              <a href="#" class="btn-post">delete</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="blog.js"></script>
+  </body>
+</html>
