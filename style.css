@@ -38,6 +38,11 @@ nav .left-side {
   flex: 50%;
 }
 
+nav .left-side li:hover {
+  flex: 50%;
+  text-shadow: 1px 0px 0px black;
+}
+
 nav .right-side {
   flex: 50%;
   justify-content: flex-end;
